@@ -71,13 +71,13 @@ cargarPeliculas();
 
 let getMovie = () => {
     let movieName = movieNameRef.value;
-    let url = `http://www.omdbapi.com/?t=${movieName}&apikey=afb3a1c5`;
+    let url = `http://www.omdbapi.com/?t=${movieName}&${key}`;
     
 
     if (movieName.length <= 0) {
         result.innerHTML = ``;
     }
-
+ASD
     else {
         fetch(url).then((resp) => resp.json()).then((data) => {
             
